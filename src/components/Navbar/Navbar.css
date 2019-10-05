@@ -1,0 +1,27 @@
+.home ul {
+  list-style: none;
+  width: 100%;
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home ul li:nth-child(1n+2) {
+  margin-left: 20px;
+}
+
+.home ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.home ul li .underline {
+  border: 0;
+  height: 3px;
+  width: 100%;
+  margin-top: 3px;
+  border-radius: 5px;
+  background-color: #F0544F;
+}
