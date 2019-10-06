@@ -1,25 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
+import menuIcon from '../../assets/menu-button.svg';
+
 const Navbar = () => {
+  const [activeLink, setActiveLink] = useState(1);
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
-    <div className="home">
+    <div className="navbar">
       <ul>
-        <li>
-          <a href>Home</a>
-          <div className="underline"></div>
+        <img src={menuIcon} alt="Menu" onClick={() => setShowMenu(!showMenu)}/>
+        <li className={(activeLink === 1 ? 'active' : '') + (showMenu ? ' show' : '')}>
+          <a href="#home" onClick={() => setActiveLink(1)}>Home</a>
         </li>
-        <li>
-          <a href>About</a>
+        <li className={(activeLink === 2 ? 'active' : '') + (showMenu ? ' show' : '')}>
+          <a href onClick={() => setActiveLink(2)}>About</a>
         </li>
-        <li>
-          <a href>Skills</a>
+        <li className={(activeLink === 3 ? 'active' : '') + (showMenu ? ' show' : '')}>
+          <a href onClick={() => setActiveLink(3)}>Skills</a>
         </li>
-        <li>
-          <a href>Projects</a>
+        <li className={(activeLink === 4 ? 'active' : '') + (showMenu ? ' show' : '')}>
+          <a href onClick={() => setActiveLink(4)}>Projects</a>
         </li>
-        <li>
-          <a href>Contact</a>
+        <li className={(activeLink === 5 ? 'active' : '') + (showMenu ? ' show' : '')}>
+          <a href onClick={() => setActiveLink(5)}>Contact</a>
         </li>
       </ul>
     </div>
