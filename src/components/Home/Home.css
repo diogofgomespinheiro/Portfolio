@@ -1,0 +1,109 @@
+.home {
+  margin: 200px auto;
+  max-width: 950px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home .content {
+  margin-left: 20px;
+}
+
+.home .content .welcome-box {
+  background: #F0544F;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 30px 30px 30px 0;
+  font-size: 20px;
+  font-weight: bold;
+  width: 180px;
+}
+
+.home .content .profile-information h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.home .content .social-media {
+  margin-top: 25px;
+}
+
+.home .content .social-media a {
+  cursor: pointer;
+}
+
+.home .content .social-media a:not(:first-child) {
+  margin-left: 15px;
+}
+
+
+.home .profile-picture {
+  margin-right: 20px;
+  height: 250px;
+  width: 250px;
+  background-image: url('../../assets/profile-img.jpg');
+  background-size: cover;
+  background-position:50% 50%;
+  border-radius: 100%;
+}
+
+.divider {
+  margin-top: 300px;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../assets/divider-img.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.divider h2 {
+  max-width: 450px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 710px) {
+  .home .profile-picture {
+    height: 180px;
+    width: 180px;
+  }
+
+  .home .content .welcome-box {
+    font-size: 16px;
+    width: 120px;
+  }
+  
+  .home .content .profile-information h1 {
+    font-size: 40px;
+  }
+
+  .home .content .profile-information h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .home {
+    margin: 80px auto;
+    flex-direction: column-reverse;
+  }
+
+  .home .profile-picture {
+    margin: 0 auto;
+  }
+
+  .home .content {
+    margin: 20px auto;
+  }
+
+  .divider {
+    margin : 0;
+  }
+}
