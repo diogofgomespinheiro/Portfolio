@@ -1,0 +1,96 @@
+.about {
+  margin: 0 auto;
+  padding: 200px 20px;
+  max-width: 1100px;
+  display: flex;
+}
+
+.about img {
+  height: 500px;
+  width: 500px;
+  margin-right: 50px;
+}
+
+.about .content {
+  padding: 80px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about .content h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.about .content button {
+  border: 0;
+  border-radius: 30px;
+  width: 120px;
+  padding: 10px 0;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  background: #F0544F;
+  cursor: pointer;
+  box-shadow: 0 2px rgb(68, 65, 65);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.about .content button:hover {
+  background: rgb(224, 54, 48);
+}
+
+.about .content button:active {
+  background: rgb(224, 54, 48);
+  box-shadow: 0 1px rgb(68, 65, 65);
+  transform: translateY(2px);
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+  .about {
+    padding: 0 20px;
+    align-items: center;
+    height: 500px;
+  }
+
+  .about img {
+    max-height: 300px;
+    max-width: 300px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about .content {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+
+  .about {
+    padding: 50px 20px;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .about img {
+    margin: 0;
+  }
+
+  .about .content {
+    padding: 50px 0;
+  }
+  .about .content p {
+    margin-top: 20px;
+  }
+
+  .about .content button {
+    margin-top: 40px;
+    align-self: center;
+  }
+}

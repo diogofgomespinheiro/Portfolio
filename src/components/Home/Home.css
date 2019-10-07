@@ -1,16 +1,17 @@
-.home {
-  margin: 200px auto;
+.container {
+  margin: 0 auto;
+  padding: 290px 0 200px 0;
   max-width: 950px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.home .content {
+.home .container .content {
   margin-left: 20px;
 }
 
-.home .content .welcome-box {
+.home .container .content .welcome-box {
   background: #F0544F;
   text-align: center;
   padding: 10px 0;
@@ -20,26 +21,26 @@
   width: 180px;
 }
 
-.home .content .profile-information h1 {
+.home .container .content .profile-information h1 {
   font-size: 60px;
   font-weight: bold;
   margin: 10px 0 5px 0;
 }
 
-.home .content .social-media {
+.home .container .content .social-media {
   margin-top: 25px;
 }
 
-.home .content .social-media a {
+.home .container .content .social-media a {
   cursor: pointer;
 }
 
-.home .content .social-media a:not(:first-child) {
+.home .container .content .social-media a:not(:first-child) {
   margin-left: 15px;
 }
 
 
-.home .profile-picture {
+.home .container .profile-picture {
   margin-right: 20px;
   height: 250px;
   width: 250px;
@@ -49,7 +50,7 @@
   border-radius: 100%;
 }
 
-.divider {
+.home .divider {
   margin-top: 300px;
   padding: 80px 0;
   display: flex;
@@ -63,47 +64,58 @@
   opacity: 0.5;
 }
 
-.divider h2 {
+.home .divider h2 {
   max-width: 450px;
   text-align: center;
 }
 
 
 @media screen and (max-width: 710px) {
-  .home .profile-picture {
+  .home .container .profile-picture {
     height: 180px;
     width: 180px;
   }
 
-  .home .content .welcome-box {
+  .home .container .content .welcome-box {
     font-size: 16px;
     width: 120px;
   }
   
-  .home .content .profile-information h1 {
+  .home .container .content .profile-information h1 {
     font-size: 40px;
   }
 
-  .home .content .profile-information h2 {
+  .home .container .content .profile-information h2 {
     font-size: 20px;
+  }
+
+  .home .divider {
+    margin-top: 150px;
   }
 }
 
 @media screen and (max-width: 510px) {
-  .home {
-    margin: 80px auto;
+  .home .container {
+    padding: 100px 0;
     flex-direction: column-reverse;
   }
 
-  .home .profile-picture {
+  .home .container .profile-picture {
     margin: 0 auto;
   }
 
-  .home .content {
-    margin: 20px auto;
+  .home .container .content {
+    margin: 50px auto;
   }
 
-  .divider {
+  .home .divider {
     margin : 0;
+    padding: 70px 0;
+    background: rgba(27, 24, 39,0.2);
+    opacity: 1;
+  }
+
+  .home .divider h2 {
+    font-size: 16px;
   }
 }

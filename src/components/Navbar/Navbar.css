@@ -1,6 +1,16 @@
 .navbar {
   width: 100%;
   padding: 25px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  transition: all .3s ease-in;
+}
+
+.scrolled {
+  background: #1F1E24;
+  box-shadow: -1rem 0 3rem #000;
 }
 
 .navbar ul {
@@ -10,16 +20,9 @@
   align-items: center;
 }
 
-.navbar ul li {
+.navbar ul a {
   display: flex;
   flex-direction: column;
-}
-
-.navbar ul li:nth-child(1n+2) {
-  margin-left: 20px;
-}
-
-.navbar ul li a {
   text-decoration: none;
   font-size: 25px;
   font-weight: bold;
@@ -27,7 +30,11 @@
   cursor: pointer;
 }
 
-.navbar ul li::after {
+.navbar ul a:nth-child(1n+2) {
+  margin-left: 20px;
+}
+
+.navbar ul a::after {
   content: "";
   border: 0;
   height: 3px;
@@ -44,7 +51,7 @@
   transition: color 0.1s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
-.navbar ul li:hover::after,.navbar ul li.active::after {
+.navbar ul a:hover::after,.navbar ul a.active::after {
   content: "";
   border: 0;
   height: 3px;
@@ -63,16 +70,31 @@
 }
 
 @media screen and (max-width: 510px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .navbar.show-fixed {
+    background: #1F1E24;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+
   .navbar ul {
     flex-direction: column;
   }
 
-  .navbar ul li {
+  .navbar ul a {
     display: none;
     margin: 10px 0 !important;
   }
 
-  .navbar ul li.show {
+  .navbar ul a.show {
     display: flex;
   }
 
