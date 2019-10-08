@@ -28,7 +28,7 @@ const Navbar = () => {
           to="home-section"
           spy={true}
           smooth={true}
-          offset={-90}
+          offset={-80}
           duration={800}
           onClick={() => setShowMenu(false)}
         >
@@ -40,7 +40,7 @@ const Navbar = () => {
           to="about-section"
           spy={true}
           smooth={true}
-          offset={-60}
+          offset={-80}
           duration={800}
           onClick={() => setShowMenu(false)}
         >
@@ -52,7 +52,7 @@ const Navbar = () => {
           to="skills-section"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-80}
           duration={500}
           onClick={() => setShowMenu(false)}
         >
@@ -82,22 +82,6 @@ const Navbar = () => {
         >
           Contact
         </Link>
-
-        {/* <li className={(activeLink === 1 ? 'active' : '') + (showMenu ? ' show' : '')}>
-          <a href="#home" onClick={() => setActiveLink(1)}>Home</a>
-        </li>
-        <li className={(activeLink === 2 ? 'active' : '') + (showMenu ? ' show' : '')}>
-          <a href onClick={() => setActiveLink(2)}>About</a>
-        </li>
-        <li className={(activeLink === 3 ? 'active' : '') + (showMenu ? ' show' : '')}>
-          <a href onClick={() => setActiveLink(3)}>Skills</a>
-        </li>
-        <li className={(activeLink === 4 ? 'active' : '') + (showMenu ? ' show' : '')}>
-          <a href onClick={() => setActiveLink(4)}>Projects</a>
-        </li>
-        <li className={(activeLink === 5 ? 'active' : '') + (showMenu ? ' show' : '')}>
-          <a href onClick={() => setActiveLink(5)}>Contact</a>
-        </li> */}
       </ul>
     </div>
   );

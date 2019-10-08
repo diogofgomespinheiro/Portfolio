@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-.navbar ul a:nth-child(1n+2) {
+.navbar ul a:not(:nth-child(2)) {
   margin-left: 20px;
 }
 

@@ -21,3 +21,26 @@ body, input, button {
   font-size: 16px;
   color: white;
 }
+
+button {
+  border: 0;
+  border-radius: 30px;
+  width: 120px;
+  padding: 10px 0;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  background: #F0544F;
+  cursor: pointer;
+  box-shadow: 0 2px rgb(68, 65, 65);
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:hover {
+  background: rgb(243, 106, 101);
+}
+
+button:active {
+  box-shadow: 0 1px rgb(68, 65, 65);
+  transform: translateY(2px);
+}
