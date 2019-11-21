@@ -1,4 +1,4 @@
-import React, { useState, createRef } from "react";
+import React, { useState, useRef } from "react";
 
 import Typewriter from "typewriter-effect";
 import ReactTooltip from "react-tooltip";
@@ -10,15 +10,17 @@ import envelope from "../../assets/envelope.svg";
 import githubLogo from "../../assets/github-logo.svg";
 
 const Home = () => {
-  const [emailToolTipText, setEmailToolTipText] = useState("Click to copy email");
-  let EmailToolTipRef = createRef();
+  const [emailToolTipText, setEmailToolTipText] = useState(
+    "Click to copy email"
+  );
+  const EmailToolTipRef = useRef(null);
 
   const handleEmailClick = () => {
     copy("diogo.fgomes.pinheiro@gmail.com");
     setEmailToolTipText("Copied to clipboard");
     setTimeout(() => {
       setEmailToolTipText("Click to copy email");
-      ReactTooltip.hide(EmailToolTipRef);
+      ReactTooltip.hide(EmailToolTipRef.current);
     }, 1000);
   };
 
@@ -64,7 +66,7 @@ const Home = () => {
               </a>
               <img
                 src={envelope}
-                ref={ref => EmailToolTipRef = ref}
+                ref={EmailToolTipRef}
                 alt="email"
                 data-tip
                 data-for="email"
@@ -80,12 +82,14 @@ const Home = () => {
         <div className="profile-picture"></div>
       </div>
       <div className="divider">
-        <h2>
-          "Power comes not from knowledge kept but from knowledge shared."
-        </h2>
-        <h2> - Bill gates</h2>
+        <div className="divider-img"></div>
+        <div className="divider-content">
+          <h2>
+            "Power comes not from knowledge kept but from knowledge shared."
+          </h2>
+          <h2> - Bill gates</h2>
+        </div>
       </div>
-
       <ReactTooltip />
     </section>
   );

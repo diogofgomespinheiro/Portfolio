@@ -70,19 +70,11 @@
 }
 
 @media screen and (max-width: 510px) {
-  .navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
-  }
 
   .navbar.show-fixed {
     background: #1F1E24;
     height: 100%;
     width: 100%;
-    top: 0;
-    right: 0;
   }
 
   .navbar ul {

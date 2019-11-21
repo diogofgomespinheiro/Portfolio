@@ -52,20 +52,29 @@
 }
 
 .home .divider {
-  margin-top: 300px;
-  padding: 80px 0;
+  margin-top: 250px;
+  height: 300px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.home .divider .divider-img {
+  height: 100%;
+  width: 100%;
   background-image: url('../../assets/divider-img.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
-.home .divider h2 {
+.home .divider .divider-content {
+  position: absolute;
+}
+
+.home .divider .divider-content h2 {
   max-width: 450px;
   text-align: center;
 }
@@ -89,10 +98,6 @@
   .home .container .content .profile-information h2 {
     font-size: 20px;
   }
-
-  .home .divider {
-    margin-top: 150px;
-  }
 }
 
 @media screen and (max-width: 521px) {
@@ -109,12 +114,10 @@
   }
 
   .home .divider {
-    margin : 0;
-    padding: 70px 0;
-    background: rgba(27, 24, 39,0.2);
-    opacity: 1;
+    margin: 0;
+    height: 200px;
   }
-  
+
   .home .divider h2 {
     font-size: 16px;
   }
