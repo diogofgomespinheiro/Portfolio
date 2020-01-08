@@ -5,7 +5,8 @@
   "author": "Diogo Pinheiro",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js",
+    "start": "node server",
+    "server": "nodemon server",
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
