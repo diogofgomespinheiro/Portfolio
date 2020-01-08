@@ -166,6 +166,7 @@ const Projects = () => {
             <li>Node.js</li>
             <li>React Native</li>
             <li>socket.io</li>
+            <li>MongoDB</li>
           </ul>
           <div className="buttons-container">
             <button className="btn disabled" disabled>
