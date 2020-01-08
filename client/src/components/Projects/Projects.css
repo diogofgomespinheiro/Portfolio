@@ -1,9 +1,23 @@
 .projects {
-  padding: 20px 0 0 0;
+  padding: 50px 0 0 0;
 }
 .projects h1 {
   font-size: 30px;
   text-align: center;
+}
+
+.projects .github-link  {
+  margin-top: 100px;
+  font-size: 25px;
+}
+
+.projects .github-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.projects .github-link a:hover {
+  color: rgb(223, 118, 114);
 }
 
 .projects .container {
@@ -55,6 +69,7 @@
   margin: 0 10px 0 10px;
   display: flex;
   flex-direction: column;
+  width: 350px;
 }
 
 .projects .container .project-information p {
@@ -66,19 +81,33 @@
   flex-grow: 1;
 }
 
+.projects .container .project-information ul li:not(:first-child) {
+  margin-top: 8px;
+}
+
 
 .projects .container .project-information .buttons-container {
   display: flex;
   align-items: center;
 }
 
-.projects .container .project-information .buttons-container button {
+.projects .container .project-information .buttons-container .btn {
   padding: 8px 0;
   width: 100px;
 }
 
-.projects .container .project-information .buttons-container span{
+.projects .container .project-information .buttons-container .btn.disabled {
+  background: gray;
+  box-shadow: none;
+}
+
+.projects .container .project-information .buttons-container a{
+  text-decoration: none;
+  color: white;
   margin-left: 15px;
+}
+
+.projects .container .project-information .buttons-container span{
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
@@ -90,22 +119,23 @@
   margin-right: 5px;
 }
 
+@media screen and (max-width: 807px) {
+  .projects .container .project-information {
+    margin-top: 100px;
+  }
 
-
-@media screen and (max-width: 695px) {
-  .projects .container .image-container img {
-    width: 300px;
-    height: 200px;
+  .projects .container .project-information .buttons-container{
+    margin-top: 50px;
   }
 }
 
-@media screen and (max-width: 595px) {
-
-  .projects .container .project-information {
-    margin-top: 50px;
+@media screen and (max-width: 444px) {
+  .projects .container .image-container {
+    width: 95%;
   }
 
-  .projects .container .project-information .buttons-container {
-    margin-top: 50px;
+  .projects .container .image-container img{
+    width: 100%;
+    height: 200px;
   }
 }

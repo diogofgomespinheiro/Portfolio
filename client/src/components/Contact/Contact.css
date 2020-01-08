@@ -1,5 +1,5 @@
 .contact {
-  padding: 100px 0;
+  padding: 180px 0;
 }
 
 .contact h1 {
@@ -44,6 +44,11 @@
   margin-right: 15px;
 }
 
+.contact .container form .btn{
+  margin-top: 30px;
+  width: 150px;
+}
+
 .contact .container form textarea {
   background-color: transparent;
   border: 1.5px white solid;
@@ -53,28 +58,14 @@
   color:white;
 }
 
-.contact .container img {
-  margin : 0 20px;
-}
-
-@media screen and (max-width: 1096px) {
-
-  .contact .container {
-    justify-content: center;
-  }
-
+@media screen and (max-width: 1057px) {
   .contact .container img {
-    margin-top: 50px;
+    margin : 100px 0 0 0;
   }
 }
 
-@media screen and (max-width: 530px) {
-
-  .contact .container form .name-information {
-    flex-direction: column;
-  }
-
+@media screen and (max-width: 600px) {
   .contact .container img {
-    width: 95%;
+    width: 90%;
   }
 }

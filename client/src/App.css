@@ -22,7 +22,7 @@ body, input, button {
   color: white;
 }
 
-button {
+.btn {
   border: 0;
   border-radius: 30px;
   width: 120px;
@@ -36,11 +36,28 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
-button:hover {
+.btn:hover {
   background: rgb(243, 106, 101);
 }
 
-button:active {
+.btn:active {
   box-shadow: 0 1px rgb(68, 65, 65);
   transform: translateY(2px);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: rgb(31, 29, 41);
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  color: rgb(223, 118, 114);
 }

@@ -10,9 +10,9 @@ const About = () => {
       <img src={aboutImage} alt="person"/>
       <div className="content">
         <h1>About Me</h1>
-        <p>Hi im ryan and my life is kinda crazy, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, exercitationem eum. rporis magnam ullam eaque quos tenetur. Corporis, repellat dolores. </p>
-        <p>Keys: Hard Worker, Team Player, </p>
-        <button>Download CV</button>
+        <p>Full Stack Developer with flair for creating elegant solutions in the least amount of time. Looking for growth opportunities to try new technologies and grow my technical skill set in a team environment.</p>
+        <p>Keys: Hard Worker, Team Player, Commitement, Ambition, Respect, Autodidact </p>
+        <button className="btn">Download CV</button>
       </div>
     </section>
   );

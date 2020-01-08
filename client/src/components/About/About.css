@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  font-size: 18px;
 }
 
 .about img {
@@ -24,47 +25,21 @@
   font-size: 30px;
 }
 
-@media screen and (max-width: 1060px) {
-
-  .about {
-    padding: 0 20px;
-    align-items: center;
-    height: 500px;
-  }
-
+@media screen and (max-width: 1056px) {
   .about img {
-    max-height: 300px;
-    max-width: 300px;
-    height: 100%;
-    width: 100%;
+    width: 80%;
+    margin: 0;
   }
 
   .about .content {
-    height: 100%;
-  }
-}
-
-@media screen and (max-width: 693px) {
-
-  .about {
-    padding: 50px 20px;
-    height: 100%;
+    width: 70%;
   }
 
-  .about img {
-    margin-left: 50px;
-  }
-
-  .about .content {
-    padding: 50px 0;
-    width: 90%;
-  }
-  .about .content p {
+  .about .content p{
     margin-top: 20px;
   }
 
-  .about .content button {
-    margin-top: 40px;
-    align-self: center;
+  .about .content .btn {
+    margin: 100px auto 0 auto; 
   }
 }

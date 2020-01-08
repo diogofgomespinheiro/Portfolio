@@ -90,10 +90,13 @@
     display: flex;
   }
 
-  .navbar img {
+  .navbar ul li:first-child {
     margin-right: 20px;
     cursor: pointer;
     align-self: flex-end;
     display: block;
+    width: 30px;
+    height: 20px;
+    background-image: url("../../assets/menu-button.svg");
   }
 }

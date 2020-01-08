@@ -1,15 +1,11 @@
 .home .container {
   margin: 0 auto;
-  padding: 290px 0 200px 0;
+  padding: 290px 15px 200px 15px;
   max-width: 1400px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap-reverse;
-}
-
-.home .container .content {
-  margin-left: 20px;
 }
 
 .home .container .content .welcome-box {
@@ -42,7 +38,6 @@
 
 
 .home .container .profile-picture {
-  margin-right: 20px;
   height: 250px;
   width: 250px;
   background-image: url('../../assets/profile-img.jpg');
@@ -79,46 +74,14 @@
   text-align: center;
 }
 
-
-@media screen and (max-width: 730px) {
-  .home .container .profile-picture {
-    height: 180px;
-    width: 180px;
-  }
-
-  .home .container .content .welcome-box {
-    font-size: 16px;
-    width: 120px;
-  }
-  
-  .home .container .content .profile-information h1 {
-    font-size: 40px;
-  }
-
-  .home .container .content .profile-information h2 {
-    font-size: 20px;
+@media screen and (max-width: 695px) {
+  .home .container .content {
+    margin-top: 50px;
   }
 }
 
-@media screen and (max-width: 521px) {
-  .home .container {
-    padding: 100px 0;
-  }
-
-  .home .container .content {
-    margin: 50px 20px;
-  }
-
-  .home .container .profile-picture {
-    margin: 0 20px;
-  }
-
-  .home .divider {
-    margin: 0;
-    height: 200px;
-  }
-
-  .home .divider h2 {
-    font-size: 16px;
+@media screen and (max-width: 450px) {
+  .home .container .content .profile-information h1 {
+    font-size: 40px;
   }
 }
