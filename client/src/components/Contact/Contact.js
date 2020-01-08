@@ -33,7 +33,7 @@ const Contact = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/email",
+        "https://fierce-earth-84105.herokuapp.com/api/email",
         formData,
         config
       );
