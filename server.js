@@ -2,6 +2,9 @@ const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const sendGrid = require("@sendgrid/mail");
+const path = require("path");
+const compression = require("compression"); 
+const enforce = require("express-sslify");
 
 if (process.env.NODE_ENV !== "production") dotenv.config();
 
@@ -48,6 +51,16 @@ app.post("/api/email", (req, res, next) => {
       });
     });
 });
+
+if (process.env.NODE_ENV === "production") {
+  app.use(compression());
+  app.use(enforce.HTTPS({ trustProtoHeader: true }));
+  app.use(express.static(path.join(__dirname, "client/build")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname,"client/build", "index.html"));
+  });
+}
 
 const PORT = process.env.PORT || 5000;
 
