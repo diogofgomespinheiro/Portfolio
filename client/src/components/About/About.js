@@ -12,7 +12,7 @@ const About = () => {
       <div className="content">
         <h1>About Me</h1>
         <p>
-          Full Stack Developer with flair for creating elegant solutions in the
+          Frontend Developer with flair for creating elegant solutions in the
           least amount of time. Looking for growth opportunities to try new
           technologies and grow my technical skill set in a team environment.
         </p>

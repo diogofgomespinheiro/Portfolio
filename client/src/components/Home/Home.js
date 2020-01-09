@@ -46,7 +46,7 @@ const Home = () => {
           </div>
           <div className="profile-information">
             <h1>Diogo Pinheiro</h1>
-            <h2>FullStack Developer</h2>
+            <h2>Frontend Developer</h2>
             <div className="social-media">
               <a
                 rel="noopener noreferrer"
