@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.1",
+    "axios": "^0.19.2",
     "clipboard-copy": "^3.1.0",
+    "contentful": "^7.14.0",
+    "dotenv": "^8.2.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
@@ -14,7 +16,7 @@
     "typewriter-effect": "^2.12.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "env-cmd --verbose -e dev react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -33,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
   }
 }
